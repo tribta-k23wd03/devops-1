@@ -73,6 +73,6 @@ test("it can be get single item", async () => {
   await db.init();
   await db.storeItem(ITEM);
   const item = await db.getItem(ITEM.id);
-  expect(items[0]).toEqual(ITEM);
+  expect(item).toEqual(ITEM);
 });
 // yarn test (jest)
